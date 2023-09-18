@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Whiteboard Extension",
+    "version": "1.0",
+    "description": "A simple whiteboard extension for Chrome.",
+    "action": {
+      "default_popup": "index.html",
+      "height" : 400,
+      "width" : 300,
+    
+      "default_icon": {
+        "16": "images/16.jpg",
+        "48": "images/48.jpg",
+        "128": "images/128.jpg"
+      
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "icons": {
+      "16": "images/16.jpg",
+      "48": "images/48.jpg",
+      "128": "images/128.jpg"
+    }
+    
+  }
+}
+  
