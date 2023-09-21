@@ -3,17 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Whiteboard Extension</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div id="container">
+    <div class="tools-card">
+        <!-- Toggle button for Drawing mode -->
+        <button id="drawButton">Write</button>
+        <!-- Toggle button for Writing mode -->
+        <button id="writeButton">Write</button>
+
+
+        <input type="color" id="color">
+        <input type="range" id="thickness" min="1" max="10" value="2">
+    </div>
+    
+    
+    <header>
+        <div class="dropdown">
+            <span>File</span>
+            <div class="dropdown-content">
+                <a href="#">New</a>
+                <a href="#">Open</a>
+                <a href="#">Save</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span>Edit</span>
+            <div class="dropdown-content">
+                <a href="#">Cut</a>
+                <a href="#">Copy</a>
+                <a href="#">Paste</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span>Info</span>
+            <div class="dropdown-content">
+                <a href="#">About</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+    </header>
     <div id="whiteboard">
         <canvas id="canvas"></canvas>
     </div>
     <div id="tools">
-        <button id="clear">Clear</button>
+        <button id="clear">clear</button>
         <input type="color" id="color">
         <input type="range" id="thickness" min="1" max="10" value="2">
     </div>
     <script src="script.js"></script>
+</div>
 </body>
 </html>

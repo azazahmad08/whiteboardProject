@@ -7,6 +7,7 @@ body{
     margin: 0;
     width: 500px;
     height: 400px;
+    background-color: beige;
 }
 
 #whiteboard{
@@ -26,10 +27,11 @@ button, input{
     margin-right: 10px;
 }
 
+
 #clear {
     background-color: transparent;
-    color: #b010cc;
-    border: 2px solid rgb(0, 255, 166);
+    color: #5b8bf9;
+    border: 2px solid rgb(8, 193, 255);
     border-radius: 20px;
     padding: 10px 20px;
     font-size: 10px;
@@ -67,5 +69,66 @@ button, input{
 #clear:hover {
     color: rgb(1, 1, 1);
     background-color: #a3a3a3;
-    border: 2px solid rgb(21, 95, 95);
+    border: 1px solid rgb(21, 95, 95);
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown item styles */
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+.tools-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.tools-card button {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tools-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the canvas */
+#canvas {
+    border: none solid #bdbcbc;
 }
